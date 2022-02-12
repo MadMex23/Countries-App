@@ -1,0 +1,71 @@
+.fullcomp {
+    background: url('https://cutewallpaper.org/21/tourism-wallpaper/Top-Travel,-Tourism,-and-Hospitality-Trends-For-2017-Travel-Ink.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.actLeft {
+    grid-column: 1 / 2;
+}
+
+.actRight {
+    grid-column: 2 / 3;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.titleAct {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 60px;
+}
+
+.inputAct {
+    background: rgb(0, 88, 160);
+    font-family: 'Georgia';
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.inputAct:focus{
+    color: #ffffff;
+}
+
+.inputAct::placeholder {
+    color: mintcream;
+    font-size: 16px;
+  }
+
+.optionNames {
+    font-family: 'Georgia';
+    font-style: italic;
+    font-size: 20px;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+}
+
+.selects {
+    -webkit-appearance: none;
+    padding: 6px 40px 6px 12px;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: rgb(0, 88, 160);
+    box-shadow: 0 1px 3px -2px #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+      color: #ffffff;
+}
+
+.btnAct {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}

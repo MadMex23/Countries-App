@@ -1,0 +1,60 @@
+.land {
+    background: url("https://wallpapercave.com/wp/wp4712331.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.landtext1 {
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 90px;
+    font-family: 'Zrnic';
+    color:rgb(10, 10, 10);
+    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke, 3px 3px 3px rgb(85, 191, 233), 5px 5px 5px whitesmoke;
+}
+
+.earthImage {
+    margin-right: 5rem;
+    margin-top: -7.7rem;
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 20, 20));
+    
+}
+
+.earthImage:hover {
+    color: rgb(251, 255, 0);
+    filter: drop-shadow(30px 10px 4px #5050d8);
+}
+
+.landtext2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    color:rgb(10, 10, 10);
+    font-family: 'Monotype Corsiva';
+    text-shadow: 2px 2px 2px skyblue, 3px 3px 3px whitesmoke;
+}
+
+.loading {
+    background-color: #56E2E2;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.loadtext {
+    font-family: 'Georgia';
+    text-align: center;
+    margin-top: 70px;
+}
+
+.loadimg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
