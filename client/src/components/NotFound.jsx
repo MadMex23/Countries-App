@@ -13,8 +13,8 @@ const NotFound = () => {
 
     return(
         <div className="notFound">
-            <h1>Country Not Found</h1>
-            <button className="btn" onClick={handleClear}>Reload</button>
+            <h1 className="nfTitle">Oops...Country Not Found :(</h1>
+            <p className="nfDesc"><strong>Click on "Clean Search" or type another Country</strong></p>
         </div>
     )
     

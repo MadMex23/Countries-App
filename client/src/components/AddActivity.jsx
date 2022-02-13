@@ -42,9 +42,13 @@ const AddActivity = () => {
     }
 
     const handleSubmit = (e) => {
+        let regex = /^(?![ .]+$)[a-zA-Z .]*$/gm
         e.preventDefault()
         if(!input.name || !input.difficulty || !input.duration || !input.season || input.addCountries.length === 0) {
             alert('You Have Empty Fields!')
+        }
+        else if (regex.test(input.name) === false) {
+            alert('Invalid name, letters only')
         }
         else {
             if(input.name.length < 3) {
@@ -76,15 +80,22 @@ const AddActivity = () => {
     return(
         <div className="fullcomp">
             <div className="actLeft">
-                <h3 className="titleAct">Add Activity</h3>
-            
+                <h3 className="titleAct">Add a Touristic Activity</h3>
+                {input.addCountries?.map(e => { 
+                        return (
+                        <div className="selectedCount" key={e}>
+                        <h4 className="namesList">{e}</h4>
+                        <button className="exes" name={e} onClick={e => handleDelete(e)}>X</button>
+                        </div>
+                        )
+                    })}
             </div>
         <form className="actRight" onSubmit={handleSubmit} >
             <p className="optionNames">Name:</p>
             <input className="inputAct" type="text" name='name' placeholder="Activity..." onChange={handleChange} value={input.name}/>
             <p className="optionNames">Difficulty:</p>
             <div>
-                <select className='selects' defaultValue='' name='difficulty' onChange={handleChange}>
+                <select className='selects' value={input.difficulty ? input.difficulty : ''} name='difficulty' onChange={handleChange}>
                     <option value='' disabled hidden>Select Difficulty</option>
                     <option value='Easy'>Easy</option>
                     <option value='Medium'>Medium</option>
@@ -95,7 +106,7 @@ const AddActivity = () => {
             </div>
             <p className="optionNames">Duration:</p>
             <div>
-                <select className='selects' defaultValue='' name="duration" onChange={handleChange}>
+                <select className='selects' value={input.duration ? input.duration : ''} name="duration" onChange={handleChange}>
                     <option value='' disabled hidden>Select Duration</option>
                     <option value='One Hour or Less'>One Hour or Less</option>
                     <option value='Two Hours'>Two Hours</option>
@@ -106,7 +117,7 @@ const AddActivity = () => {
             </div>
             <p className="optionNames">Season:</p>
             <div>
-                <select className='selects' defaultValue='' name="season" onChange={handleChange}>
+                <select className='selects' value={input.season ? input.season : ''} name="season" onChange={handleChange}>
                     <option value='' disabled hidden>Select Season</option>
                     <option value='All Seasons'>All Seasons</option>
                     <option value='Spring'>Spring</option>
@@ -117,25 +128,19 @@ const AddActivity = () => {
             </div>
             <p className="optionNames">Countries:</p>
             <div>
-                <select className='selects' defaultValue='' name='countries' placeholder="Select Countries" onChange={handleCountries}>
+                <select className='selects' value={input.addCountries ? input.addCountries : ''} name='countries' placeholder="Select Countries" onChange={handleCountries}>
                     <option value='' disabled hidden>Add Countries...</option>
                     {countries?.map(c => {
                         return <option key={c.id} value={c.name}>{c.name}</option>})}
                 </select>
-                {input.addCountries?.map(e => { 
-                    return (
-                    <div key={e}>
-                    <h4>{e}</h4>
-                    <button name={e} onClick={e => handleDelete(e)}>X</button>
-                    </div>
-                    )
-                })}
             </div>
-            <div className="btnAct">
-            <button type="submit">Submit</button>
-            <Link to= '/countries'>
-                <button>Back Home</button>
-            </Link>
+            <div className="buttonsdiv1">
+                <Link to= '/countries'>
+                    <button className="btnAct2">Back Home</button>
+                </Link>
+            </div>  
+            <div className="buttonsdiv2">
+                <button className="btnAct1"type="submit">Submit</button>
             </div>
         </form>
         </div>

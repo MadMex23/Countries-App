@@ -24,7 +24,7 @@ const NavBar = ({handlerOrder, handlerContinent, handlerActivity}) => {
            </NavLink>
            <Search/>
            <br/>
-           <button className="buttons" onClick={handleClear}>Clean Filters</button>
+           <button className="buttons" onClick={handleClear}>Clean Search</button>
            <select className= "selection" defaultValue='' onChange={e => handlerOrder(e)}>
                <option className='option' value=''>Order By...</option>
                <option className='option' value='AtoZ'>A to Z</option>
