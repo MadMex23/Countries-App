@@ -1,181 +1,180 @@
 .fullcomp {
-    background: url('https://cutewallpaper.org/21/tourism-wallpaper/Top-Travel,-Tourism,-and-Hospitality-Trends-For-2017-Travel-Ink.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+  background: url("https://cutewallpaper.org/21/tourism-wallpaper/Top-Travel,-Tourism,-and-Hospitality-Trends-For-2017-Travel-Ink.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
 }
 
 .actLeft {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
 }
 
 .actRight {
-    grid-column: 2 / 3;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px;
-    margin-top: 60px;
-    width: 80%;
+  grid-column: 2 / 3;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  margin-top: 60px;
+  width: 80%;
 }
 
 .titleAct {
-    color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-left: 40px;
-    text-align: center;
-	font-size: 60px;
-    line-height: 18px;
-    text-decoration: overline;
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-left: 40px;
+  text-align: center;
+  font-size: 60px;
+  line-height: 18px;
+  text-decoration: overline;
 }
 
 .optionNames {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 100px;
-    font-family: 'Georgia';
-    font-style: italic;
-    font-size: 25px;
-    font-style: oblique;
-    line-height: 0;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px rgba(245, 245, 245, 0.5);
-    grid-column: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 25px;
+  font-style: oblique;
+  line-height: 0;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px rgba(245, 245, 245, 0.5);
+  grid-column: 1 / 2;
 }
 
 .inputAct {
-    display: flex;
-    -webkit-appearance: none;
-    background: rgb(0, 88, 160);
-    color: #e6e6e6;
-    font-size: 16px;
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    border-color: #e6e6e6;
-    padding: 6px;
-    box-shadow: 0 1px 3px -2px #e6e6e6;
-    width: 75.5%;
-    grid-column: 2 / 3;
+  display: flex;
+  -webkit-appearance: none;
+  background: rgb(0, 88, 160);
+  color: #e6e6e6;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  border-color: #e6e6e6;
+  padding: 6px;
+  box-shadow: 0 1px 3px -2px #e6e6e6;
+  width: 75.5%;
+  grid-column: 2 / 3;
 }
 
-.inputAct:focus{
-    color: #ffffff;
+.inputAct:focus {
+  color: #ffffff;
 }
 
 .inputAct::placeholder {
-    color: #e6e6e6;
-    font-size: 16px;
-  }
+  color: #e6e6e6;
+  font-size: 16px;
+}
 
 .selects {
-    display: flex;
-    width: 80%;
-    -webkit-appearance: none;
-    padding: 6px 40px 6px 12px;
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    background: rgb(0, 88, 160);
-    box-shadow: 0 1px 3px -2px #e6e6e6;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
-    transition: all 150ms ease;
-    color: #e6e6e6;
-    grid-column: 2 / 3;
+  display: flex;
+  width: 80%;
+  -webkit-appearance: none;
+  padding: 6px 40px 6px 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  background: rgb(0, 88, 160);
+  box-shadow: 0 1px 3px -2px #e6e6e6;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+  color: #e6e6e6;
+  grid-column: 2 / 3;
 }
 
 .buttonsdiv1 {
-    display: flex;
-    justify-content: flex-end;
-    line-height: 0%;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 0%;
 }
 
 .buttonsdiv2 {
-    display: flex;
-    justify-content: center;
-    line-height: 0%;
-    margin-right: 20px;
-   
+  display: flex;
+  justify-content: center;
+  line-height: 0%;
+  margin-right: 20px;
 }
 
 .btnAct1 {
-    background-color: rgb(0, 88, 160);
-    border: none;
-    color: white;
-    padding: 9px 18px;
-    text-align: center;
-    font-size: 14px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 3px;
+  background-color: rgb(0, 88, 160);
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .btnAct1:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .btnAct2 {
-    background-color: rgb(160, 0, 0);
-    border: none;
-    color: white;
-    padding: 9px 18px;
-    text-align: center;
-    font-size: 14px;
-    opacity: 0.6;
-    transition: 0.3s;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 3px;
+  background-color: rgb(160, 0, 0);
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .btnAct2:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .selectedCount {
-    border-radius: 7px;
-    display: flex;
-    margin-left: 30%;
-    justify-content: space-between;
-    width: 55%;
-    margin-bottom: 2px;
-    line-height: 0pt;
-    padding-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15.5px;
-    color: #0e0e0e;
-    background-color: rgba(23, 98, 160, 0.5);
+  border-radius: 7px;
+  display: flex;
+  margin-left: 30%;
+  justify-content: space-between;
+  width: 55%;
+  margin-bottom: 2px;
+  line-height: 0pt;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.5px;
+  color: #0e0e0e;
+  background-color: rgba(23, 98, 160, 0.5);
 }
 
 .namesList {
-    font-family: inherit;
-    text-shadow: 1px 1px 1px #e6e6e670;
+  font-family: inherit;
+  text-shadow: 1px 1px 1px #e6e6e670;
 }
 
 .exes {
-    background-color: rgb(160, 0, 0);
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 0px 5px 5px 0px;
+  background-color: rgb(160, 0, 0);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .exes:hover {
-    opacity: 1;
+  opacity: 1;
 }

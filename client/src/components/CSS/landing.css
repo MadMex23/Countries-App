@@ -1,60 +1,85 @@
 .land {
-    background: url("https://wallpapercave.com/wp/wp4712331.jpg") no-repeat center center fixed; 
-    background-size: cover;
-    min-height: 100%;
-    width: 100%;
-    position: fixed;
+  background: url("https://wallpapercave.com/wp/wp4712331.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 .landtext1 {
-    margin-top: 1rem;
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 90px;
-    font-family: 'Zrnic';
-    color:rgb(10, 10, 10);
-    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke, 3px 3px 3px rgb(85, 191, 233), 5px 5px 5px whitesmoke;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 95px;
+  font-family: "Georgia";
+  font-weight: 600;
+  filter: drop-shadow(2px 2px 2px black);
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 400%;
+  animation: move 5s ease infinite;
+  background-image: linear-gradient(
+    68.7deg,
+    rgba(29, 173, 235, 1) 13.2%,
+    rgba(137, 149, 250, 1) 29.8%,
+    rgba(229, 109, 212, 1) 48.9%,
+    rgba(255, 68, 128, 1) 68.2%,
+    rgba(255, 94, 0, 1) 86.4%
+  );
+}
+
+@keyframes move {
+  0%,
+  100% {
+    background-position: 200% 0%;
+  }
+
+  50% {
+    background-position: 0% 200%;
+  }
 }
 
 .earthImage {
-    margin-right: 5rem;
-    margin-top: -7.7rem;
-    text-align: center;
-    filter: drop-shadow(0 0 0.75rem rgb(20, 20, 20));
-    
+  margin-right: 5rem;
+  margin-top: -7.7rem;
+  text-align: center;
+  filter: drop-shadow(0 0 0.75rem rgb(20, 20, 20));
 }
 
 .earthImage:hover {
-    color: rgb(251, 255, 0);
-    filter: drop-shadow(30px 10px 4px #5050d8);
+  color: rgb(251, 255, 0);
+  filter: drop-shadow(30px 10px 4px #5050d8);
 }
 
 .landtext2 {
-    text-align: center;
-    padding: 5px;
-    font-size: 40px;
-    color:rgb(10, 10, 10);
-    font-family: 'Monotype Corsiva';
-    text-shadow: 2px 2px 2px skyblue, 3px 3px 3px whitesmoke;
+  text-align: center;
+  padding: 5px;
+  font-size: 40px;
+  color: rgb(10, 10, 10);
+  font-family: "Monotype Corsiva";
+  text-shadow: 2px 2px 2px skyblue, 3px 3px 3px whitesmoke;
 }
 
 .loading {
-    background-color: #56E2E2;
-    background-size: cover;
-    min-height: 100%;
-    width: 100%;
-    position: fixed;
+  background-color: #56e2e2;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 .loadtext {
-    font-family: 'Georgia';
-    text-align: center;
-    margin-top: 70px;
+  font-family: "Georgia";
+  text-align: center;
+  margin-top: 90px;
+  font-size: 50px;
 }
 
 .loadimg {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
 }

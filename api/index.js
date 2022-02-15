@@ -17,28 +17,28 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
-const { conn, Country } = require('./src/db.js');
-const axios = require('axios');
+const server = require("./src/app.js");
+const { conn, Country } = require("./src/db.js");
+const axios = require("axios");
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(async() => {
-  const {data} = await axios.get('https://restcountries.com/v3/all')
-  data.map(c => {
+conn.sync({ force: true }).then(async () => {
+  const { data } = await axios.get("https://restcountries.com/v3/all");
+  data.map((c) => {
     Country.findOrCreate({
       where: {
         id: c.cca3,
         name: c.name.common,
         flag: c.flags[0],
         continent: c.continents[0],
-        capital: c.capital ? c.capital[0] : 'No Capital',
-        subregion: c.subregion || 'None',
+        capital: c.capital ? c.capital[0] : "No Capital",
+        subregion: c.subregion || "None",
         area: c.area.toString(),
-        population: c.population.toString()
-      }
-    })
-  })
+        population: c.population.toString(),
+      },
+    });
+  });
   server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+    console.log("%s listening at 3001"); // eslint-disable-line no-console
   });
 });

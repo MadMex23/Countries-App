@@ -1,91 +1,134 @@
 .back {
-    background-image: url("https://img.favpng.com/6/6/24/blue-white-color-wallpaper-png-favpng-PeNy0SiAkWPqqBThX04HqTqaA.jpg");
-    background-size: cover;
-    min-height: 100%;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("https://bloximages.chicago2.vip.townnews.com/missoulian.com/content/tncms/assets/v3/editorial/5/aa/5aa9642f-e19b-5cb8-91b8-e07165f99a3b/59a05d725869b.image.jpg?resize=1200%2C800");
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90vw;
-    height: 10vh;
-    margin-top: 15px;
-    margin-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 91vw;
+  height: 10vh;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.backbtn {
+  background-color: rgb(160, 0, 0);
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.backbtn:hover {
+  opacity: 1;
+}
+
+.addbtn {
+  background-color: rgb(0, 57, 104);
+  border: none;
+  color: white;
+  padding: 9px 18px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.addbtn:hover {
+  opacity: 1;
 }
 
 .counName {
-    font-size: 60px;
-    margin-top: -100px;
-    font-family: 'Bebas Neue';
+  font-size: 60px;
+  margin-top: -100px;
+  font-family: "Georgia";
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    width: 100vw;
-    height: 90vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 100vw;
+  height: 90vh;
 }
 
 .divflag {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .detflag {
-    width: auto;
-    height: 300px;
-    border-radius: 5px;
-    grid-column: 1 / 2;
-    filter: drop-shadow(2px 2px 2px black);
+  width: auto;
+  height: 300px;
+  border-radius: 5px;
+  grid-column: 1 / 2;
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .info {
-    grid-column: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .titleinfo {
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    margin-right: 100px;
-    border: 2px solid black;
-    background-color: rgba(0, 110, 255, 0.75);
-    border-radius: 3px;
-
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 50px;
+  line-height: 0px;
 }
 
 .contenido {
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    font-size: 20px;
-    width: auto;
-    margin-right: 100px;
-    border: 2px solid black;
-    background-color: rgba(0, 110, 255, 0.75);
-    border-radius: 3px;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  text-align: start;
+  font-size: 20px;
+  width: auto;
+  margin-right: 50px;
+  padding-left: 25px;
+  background-color: rgba(23, 98, 160, 0.5);
+  border-radius: 3px;
 }
 
 .activities {
-    grid-row: 3 / 4;
-    margin-right: 100px;
-    border: 2px solid black;
-    background-color: rgba(0, 110, 255, 0.75);
-    border-radius: 3px;
+  margin-right: 50px;
+}
+
+.tourAct {
+  font-size: 25px;
+  line-height: 5px;
 }
 
 .eachAct {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: -15px;
+  display: flex;
+  justify-content: space-evenly;
+  letter-spacing: 0.5px;
+  background-color: rgba(23, 98, 160, 0.5);
+  border-radius: 3px;
+}
+
+.nameA {
+  color: rgb(0, 25, 105);
 }

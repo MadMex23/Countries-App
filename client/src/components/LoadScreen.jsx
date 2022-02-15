@@ -1,14 +1,14 @@
 import React from "react";
-import loading from "../images/loading.gif"
-import "./CSS/landing.css"
+import loading from "../images/loading.gif";
+import "./CSS/Landing.css";
 
 const LoadScreen = () => {
-    return(
-        <div className="loading">
-            <h1 className="loadtext">Loading...</h1>
-            <img className="loadimg" src={ loading } alt="loading"/>
-        </div>
-    )
-}
+  return (
+    <div className="loading">
+      <h1 className="loadtext">Loading...</h1>
+      <img className="loadimg" src={loading} alt="loading" />
+    </div>
+  );
+};
 
-export default LoadScreen
+export default LoadScreen;
