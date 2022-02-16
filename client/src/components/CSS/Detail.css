@@ -116,6 +116,13 @@
   margin-right: 50px;
 }
 
+.noAct {
+  font-size: 20px;
+  padding: 20px;
+  background-color: rgba(23, 98, 160, 0.5);
+  border-radius: 3px;
+}
+
 .tourAct {
   font-size: 25px;
   line-height: 5px;

@@ -3,6 +3,7 @@ import Countries from "./components/Countries";
 import CountryDetail from "./components/CountryDetail";
 import AddActivity from "./components/AddActivity";
 import Landing from "./components/Landing";
+import OtherRoute from "./components/OtherRoute"
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/countries" element={<Countries />} />
         <Route exact path="/countries/:id" element={<CountryDetail />} />
         <Route exact path="/activity" element={<AddActivity />} />
+        <Route path="*" element={<OtherRoute />} />
       </Routes>
     </div>
   );

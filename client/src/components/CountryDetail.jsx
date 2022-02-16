@@ -78,7 +78,9 @@ const CountryDetail = () => {
             </div>
             <div className="activities">
               <h3 className="tourAct">Tourist Activities</h3>
-              {activitiesMap}
+              {activitiesMap === undefined || activitiesMap.length === 0
+                ? <h4 className="noAct">No Activities Found, Add One!</h4>
+                : activitiesMap}
             </div>
           </div>
         </div>
