@@ -1,5 +1,7 @@
 # Countries App
 
+[Take a Tour Here!](https://www.linkedin.com/feed/update/urn:li:activity:6902206576086917120/)
+
 ## Objetivos del Proyecto
 
 La idea general es crear una aplicación en la cual se pueda ver información de distintos paises utilizando una api externa y a partir de ella poder, entre otras cosas:
