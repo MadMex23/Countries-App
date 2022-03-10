@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { getAllCountries, createActivity } from "../redux/actions";
+import { getAllCountries, createActivity, foundActivities } from "../redux/actions";
 import LoadScreen from "./LoadScreen";
 import "./CSS/AddActivity.css";
 
@@ -54,7 +54,8 @@ const AddActivity = () => {
       alert("You Have Empty Fields!");
     } else if (regex.test(input.name) === false) {
       alert("Invalid name, letters only");
-    } else {
+    }
+     else {
       if (input.name.length < 3) {
         return alert("The activity name must have at least three characters");
       }

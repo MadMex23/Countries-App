@@ -25,7 +25,7 @@ const NavBar = ({ handlerOrder, handlerContinent, handlerActivity }) => {
       <Search />
       <br />
       <button className="buttons" onClick={handleClear}>
-        Clean Search
+        Refresh
       </button>
       <select
         className="selection"

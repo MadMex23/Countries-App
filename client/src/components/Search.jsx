@@ -15,8 +15,9 @@ const FilterCountries = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (input === 0) {
+    if (input === "") {
       alert("Type a Country");
+      return false
     }
     dispatch(foundCountries(input));
     setInput("");

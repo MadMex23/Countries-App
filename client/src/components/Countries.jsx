@@ -30,28 +30,6 @@ const AllCountries = () => {
   const actualCountries = countries.slice(indexFirst, indexLast);
   const paged = (p) => setCurrent(p);
 
-  // const [pageNumber, setPageNumber] = React.useState(1)
-
-  // const handleNextPage = () => {
-  //     if(countries.length > current + quantity) {
-  //         setCurrent(current + quantity)
-  //     }
-  //     if(countries.length > 1) {
-  //         setPageNumber(pageNumber + 1)
-  //     }
-  // }
-
-  // const handlePrevPage = () => {
-  //     if(current > 0) {
-  //         setCurrent(current - quantity)
-  //         setPageNumber(pageNumber - 1)
-  //     }
-  //     if(current === 0) {
-  //         setCurrent(current)
-  //         setPageNumber(pageNumber)
-  //     }
-  // }
-
   React.useEffect(() => {
     dispatch(getAllCountries()).then(() => setLoadScreen(false));
   }, []);

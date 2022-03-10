@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className="notFound">
       <h1 className="nfTitle">Oops...Country Not Found :(</h1>
       <p className="nfDesc">
-        <strong>Click on "Clean Search" or type another Country</strong>
+        <strong>Click on "Refresh" or type another Country</strong>
       </p>
     </div>
   );
